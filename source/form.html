@@ -47,11 +47,11 @@
             <legend>Тип</legend>
             <ul class="knitted-form__list">
               <li class="knitted-form__option">
-                <input type="radio" id="interior" class="visually-hidden knitted-form__field knitted-form__field--radio" name="radio" checked>
+                <input type="radio" id="interior" class="visually-hidden knitted-form__field knitted-form__field--radio" name="type" value="interior" checked>
                 <label for="interior">Аксессуар для интерьера</label>
               </li>
               <li class="knitted-form__option">
-                <input type="radio" id="toy" class="visually-hidden knitted-form__field knitted-form__field--radio" name="radio">
+                <input type="radio" id="toy" class="visually-hidden knitted-form__field knitted-form__field--radio" name="type" value="toy">
                 <label for="toy">Детская игрушка</label>
               </li>
             </ul>
@@ -107,7 +107,7 @@
             <legend>Тел</legend>
             <p class="knitted-form__group">
               <label for="phone" class="visually-hidden">Номер телефона:</label>
-              <input class="knitted-form__field knitted-form__field--text" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+              <input class="knitted-form__field knitted-form__field--tel" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
             </p>
           </fieldset>
 
@@ -129,7 +129,7 @@
 
           <p class="knitted-form__footnote">*Поля обязательны для заполнения</p>
 
-          <button href="#" class="knitted-form__button button" type="submit">Отправить заказ</button>
+          <button class="knitted-form__button button" type="submit">Отправить заказ</button>
         </form>
 
       </div>
