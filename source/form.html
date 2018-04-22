@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Вязание на заказ, магазин «Мишка»</title>
+  </head>
+  <body>
+
+  <header class="page-header">
+    <a class="page-header__logo-link" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a>Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label class="search__label visually-hidden" for="search__input">Поиск по сайту</label>
+            <input class="search__input" id="search__input" type="text" name="search" placeholder="Поиск по сайту">
+            <button class="search__button visually-hidden" type="submit">Найти</button>
+          </form>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Корзина: пока пуста</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Сделать заказ в магазине «Мишка»</h1>
+
+    <section class="order">
+      <div class="order__wrapper">
+        <h2 class="order__title">Вязание на заказ</h2>
+        <p class="order__welcome">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <form class="order__form knitted-form" action="https://echo.htmlacademy.ru" method="post">
+
+          <fieldset class="knitted-form__fieldset">
+            <legend>Тип</legend>
+            <ul class="knitted-form__list">
+              <li class="knitted-form__option">
+                <input type="radio" id="interior" class="visually-hidden knitted-form__field knitted-form__field--radio" name="radio" checked>
+                <label for="interior">Аксессуар для интерьера</label>
+              </li>
+              <li class="knitted-form__option">
+                <input type="radio" id="toy" class="visually-hidden knitted-form__field knitted-form__field--radio" name="radio">
+                <label for="toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="knitted-form__fieldset">
+            <legend>Цвет</legend>
+            <ul class="knitted-form__list">
+              <li class="knitted-form__option">
+                <input type="checkbox" id="white" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="white" checked>
+                <label for="white">Белый</label>
+              </li>
+              <li class="knitted-form__option">
+                <input type="checkbox" id="grey" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="grey" checked>
+                <label for="grey">Серый</label>
+              </li>
+              <li class="knitted-form__option">
+                <input type="checkbox" id="tiffany" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="tiffany">
+                <label for="tiffany">«Тиффани»</label>
+              </li>
+              <li class="knitted-form__option">
+                <input type="checkbox" id="black" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="black">
+                <label for="black">Черный</label>
+              </li>
+              <li class="knitted-form__option">
+                <input type="checkbox" id="pink" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="pink" disabled>
+                <label for="pink">Розовый</label>
+              </li>
+              <li class="knitted-form__option">
+                <input type="checkbox" id="orange" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="orange">
+                <label for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="knitted-form__fieldset">
+            <legend>ФИО</legend>
+            <p class="knitted-form__group">
+              <label for="first-name">Имя:</label>
+              <input class="knitted-form__field knitted-form__field--text" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
+            </p>
+            <p class="knitted-form__group">
+              <label for="last-name">Фамилия:</label>
+              <input class="knitted-form__field knitted-form__field--text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*">
+            </p>
+            <p class="knitted-form__group">
+              <label for="middle-name">Отчество:</label>
+              <input class="knitted-form__field knitted-form__field--text" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+            </p>
+          </fieldset>
+
+          <fieldset class="knitted-form__fieldset">
+            <legend>Тел</legend>
+            <p class="knitted-form__group">
+              <label for="phone" class="visually-hidden">Номер телефона:</label>
+              <input class="knitted-form__field knitted-form__field--text" id="phone" type="text" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
+            </p>
+          </fieldset>
+
+          <fieldset class="knitted-form__fieldset">
+            <legend>E-mail</legend>
+            <p class="knitted-form__group">
+              <label for="email" class="visually-hidden">E-mail:</label>
+              <input class="knitted-form__field knitted-form__field--email" id="email" type="email" name="email" placeholder="Ваш Email*">
+            </p>
+          </fieldset>
+
+          <fieldset class="knitted-form__fieldset">
+            <legend>Доп</legend>
+            <p class="knitted-form__group">
+              <label for="msg" class="visually-hidden">Дополнительное сообщение:</label>
+              <textarea class="knitted-form__field knitted-form__field--textarea" id="msg" name="msg" rows="6" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </p>
+          </fieldset>
+
+          <p class="knitted-form__footnote">*Поля обязательны для заполнения</p>
+
+          <button href="#" class="knitted-form__button button" type="submit">Отправить заказ</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list" aria-label="Мы в социальных сетях">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://instagram.com"><span class="visually-hidden">Инстаграм</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://facebook.com"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML Academy" target="_blank"><img src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy"></a></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
