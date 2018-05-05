@@ -1,14 +1,12 @@
 .about {
-  background: url('../img/zigzag-line.svg') center top repeat-x;
+  background: url("../img/zigzag-line.svg") center top repeat-x;
   background-size: 300px 6px;
   padding-top: 37px;
   padding-left: @page-bleed;
   padding-right: @page-bleed;
   margin-bottom: 57px;
 }
-.about__wrapper {
 
-}
 .about__title {
   font-size: @h2-size;
   color: @headings-color;
@@ -17,11 +15,13 @@
   margin: 0;
   margin-bottom: 30px;
 }
+
 .about__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .about__item {
   position: relative;
   font-size: @font-size-big;
@@ -31,6 +31,7 @@
   padding-top: 55px;
   margin-bottom: 29px;
 }
+
 .about__item::before {
   content: "";
   position: absolute;
@@ -41,21 +42,27 @@
   background-repeat: no-repeat;
   background-position: center top;
 }
+
 .about__item--eco::before {
-  background-image: url(../img/icon-feature-flower.svg);
+  background-image: url("../img/icon-feature-flower.svg");
 }
+
 .about__item--style::before {
-  background-image: url(../img/icon-feature-money.svg);
+  background-image: url("../img/icon-feature-money.svg");
 }
+
 .about__item--like::before {
-  background-image: url(../img/icon-feature-heart.svg);
+  background-image: url("../img/icon-feature-heart.svg");
 }
+
 .about__item--love::before {
-  background-image: url(../img/icon-feature-ball.svg);
+  background-image: url("../img/icon-feature-ball.svg");
 }
+
 .about__item--patre::before {
-  background-image: url(../img/icon-feature-rocket.svg);
+  background-image: url("../img/icon-feature-rocket.svg");
 }
+
 .about__item--gift::before {
-  background-image: url(../img/icon-feature-gift.svg);
+  background-image: url("../img/icon-feature-gift.svg");
 }
