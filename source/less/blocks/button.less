@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px 15px 13px 15px;
+  font-size: @font-size-big;
+  color: @grey;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @btn-background;
+  border: @btn-border;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: @btn-background-hover;
+  color: @white;
+  border: @btn-border-hover;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #eaeaea;
+}

@@ -1,0 +1,47 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 27%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal--add-to-cart {
+  background-color: @white;
+  border-top: 1px solid @grey-ish;
+  border-bottom: 1px solid @grey-ish;
+  padding: 34px 30px 34px;
+}
+
+.modal__title {
+  font-size: @h2-size;
+  color: @headings-color;
+  font-weight: @headings-font-weight;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.modal__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  background: url("../img/icon-menu-close.svg") center center no-repeat;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.modal__close:hover,
+.modal__close:focus {
+  opacity: 0.8;
+}
