@@ -5,8 +5,9 @@
 }
 
 .mishka-inside__wrapper {
+  position: relative;
   border: 1px solid @grey-whisper-alt;
-  padding: 34px;
+  padding-top: 95px;
 }
 
 .mishka-inside__wrapper:hover,
@@ -18,35 +19,32 @@
   box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.1);
 }
 
+.mishka-inside__info {
+  padding-left: 34px;
+  padding-right: 34px;
+  padding-bottom: 34px;
+}
+
 .mishka-inside__title {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  position: relative;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  background: url("../img/icon-video.svg") 40px center no-repeat;
+  background-size: 32px 22px;
+  width: 100%;
+  min-height: 22px;
   font-size: @h3-size;
   color: @headings-color;
   font-weight: @headings-font-weight;
   line-height: @line-height-small;
+  padding-left: (63px + 34px);
+  padding-right: 34px;
   margin: 0;
-  margin-bottom: 25px;
-}
-
-.mishka-inside__title::before {
-  content: "";
-  width: 32px;
-  height: 22px;
-  background: url("../img/icon-video.svg") center top no-repeat;
-  background-size: 32px 22px;
-}
-
-.mishka-inside__title-text {
-  margin-left: 25px;
 }
 
 .mishka-inside__video {
   position: relative;
-  margin-left: (-34px - 1px);
-  margin-right: (-34px - 1px);
+  min-height: 150px;
 }
 
 .mishka-inside__video-image {
@@ -59,12 +57,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transition: all 0.2s;
   @play-button-width: 100px;
   @play-button-height: 77px;
   width: @play-button-width;
   height: @play-button-height;
-  @play-button-offset-top: -39px;
-  @play-button-offset-left: -50px;
+  @play-button-offset-top: -(@play-button-height / 2);
+  @play-button-offset-left: -(@play-button-width / 2);
   margin-top: @play-button-offset-top;
   margin-left: @play-button-offset-left;
   @k-grow: 1.2;
@@ -72,17 +71,13 @@
 
   &:hover,
   &:focus {
-    width: @play-button-width * @k-grow;
-    height: @play-button-height * @k-grow;
-    margin-top: @play-button-offset-top * @k-grow;
-    margin-left: @play-button-offset-left * @k-grow;
+    transform: scale(@k-grow);
+    transition: all 0.2s;
   }
 
   &:active {
-    width: @play-button-width * @k-shrink;
-    height: @play-button-height * @k-shrink;
-    margin-top: @play-button-offset-top * @k-shrink;
-    margin-left: @play-button-offset-left * @k-shrink;
+    transform: scale(@k-shrink);
+    transition: all 0.2s;
     opacity: 0.3;
   }
 }
@@ -93,6 +88,95 @@
   cursor: pointer;
 }
 
+.mishka-inside__description {
+  font-size: @font-size-small;
+  line-height: @line-height-small;
+  margin-top: 33px;
+  margin-bottom: 28px;
+}
+
 .mishka-inside__button {
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .mishka-inside {
+    padding-left: @page-bleed-tablet;
+    padding-right: @page-bleed-tablet;
+    margin-bottom: 58px;
+  }
+
+  .mishka-inside__wrapper {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid @grey-light;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .mishka-inside__info {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+
+  .mishka-inside__title {
+    position: static;
+    font-size: @h3-size-tablet;
+    background-position: 1px center;
+    padding-left: 66px;
+    margin-bottom: 38px;
+  }
+
+  .mishka-inside__video {
+    border-bottom: 1px solid @grey-light;
+    margin-bottom: 38px;
+  }
+
+  .mishka-inside__description {
+    font-size: @font-size-small-tablet;
+    line-height: @base-line-height;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mishka-inside {
+    padding-left: @page-bleed-desktop;
+    padding-right: @page-bleed-desktop;
+    margin-bottom: 58px;
+  }
+
+  .mishka-inside__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 0;
+  }
+
+  .mishka-inside__video {
+    flex-basis: 64.76%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 0;
+    margin: 0;
+  }
+
+  .mishka-inside__info {
+    flex-basis: 35.24%;
+    border: 1px solid @grey-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 78px;
+    padding-right: 55px;
+  }
+
+  .mishka-inside__title {
+    background-position: 1px top;
+    padding-left: 0;
+    padding-top: 50px;
+    margin-bottom: 35px;
+  }
 }

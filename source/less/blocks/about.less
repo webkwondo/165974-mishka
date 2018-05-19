@@ -1,6 +1,7 @@
 .about {
   background: url("../img/zigzag-line.svg") center top repeat-x;
-  background-size: 300px 6px;
+  background-size: auto 6px;
+  position: relative;
   padding-top: 37px;
   padding-left: @page-bleed;
   padding-right: @page-bleed;
@@ -65,4 +66,130 @@
 
 .about__item--gift::before {
   background-image: url("../img/icon-feature-gift.svg");
+}
+
+.about__item-text {
+  display: inline-block;
+  max-width: 210px;
+}
+
+.about__item--eco .about__item-text {
+  max-width: 180px;
+}
+
+.about__item--like .about__item-text {
+  max-width: 190px;
+}
+
+.about__item--love .about__item-text {
+  max-width: 230px;
+}
+
+.about__item--patre .about__item-text {
+  max-width: 260px;
+}
+
+@media (min-width: 500px) {
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .about__item {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .about {
+    background: url("../img/zigzag-line.svg") center top repeat-x;
+    background-size: auto 17px;
+    padding-top: 66px;
+    padding-left: @page-bleed-tablet;
+    padding-right: @page-bleed-tablet;
+    margin-bottom: 25px;
+  }
+
+  .about__title {
+    font-size: @h2-size-tablet;
+    line-height: @h2-line-height-tablet;
+    color: @black;
+    margin-bottom: 45px;
+  }
+
+  .about__title,
+  .about__list {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__item {
+    flex-basis: 50%;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 55px;
+  }
+
+  .about__item--eco {
+    order: 1;
+  }
+
+  .about__item--style {
+    order: 3;
+  }
+
+  .about__item--like {
+    order: 5;
+  }
+
+  .about__item--love {
+    order: 2;
+  }
+
+  .about__item--patre {
+    order: 4;
+  }
+
+  .about__item--gift {
+    order: 6;
+  }
+
+  .about__item-text {
+    max-width: 245px;
+  }
+
+  .about__item--eco .about__item-text {
+    max-width: 220px;
+  }
+
+  .about__item--like .about__item-text {
+    max-width: 225px;
+  }
+
+  .about__item--love .about__item-text {
+    max-width: 260px;
+  }
+
+  .about__item--patre .about__item-text {
+    max-width: 305px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about {
+    background: url("../img/zigzag-line.svg") center top repeat-x;
+    background-size: auto 23px;
+    padding-top: 83px;
+    padding-left: @page-bleed-desktop;
+    padding-right: @page-bleed-desktop;
+    margin-bottom: 32px;
+  }
+
+  .about__title {
+    font-size: @h2-size-desktop;
+    line-height: @h2-line-height-desktop;
+  }
 }

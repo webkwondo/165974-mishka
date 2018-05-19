@@ -13,25 +13,38 @@
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--logo">
-          <a class="site-list__item-inside site-list__item-inside--logo logo">
-            <img class="logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          <a class="site-list__item-inside site-list__item-inside--logo logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg" alt="Логотип магазина «Мишка»">
+            </picture>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-inside" href="catalog.html">Каталог товаров</a>
+        <li class="site-list__item site-list__item--catalog">
+          <a class="site-list__item-inside site-list__item-inside--catalog" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__item-inside">Вязание на заказ</a>
+        <li class="site-list__item site-list__item--order">
+          <a class="site-list__item-inside site-list__item-inside--order">Вязание на заказ</a>
         </li>
-        <li class="site-list__item">
-            <form class="site-list__item-inside search" action="https://echo.htmlacademy.ru" method="get">
+        <li class="site-list__item site-list__item--search">
+            <form class="site-list__item-inside site-list__item-inside--search search" action="https://echo.htmlacademy.ru" method="get">
               <label class="search__label visually-hidden" for="search__input">Поиск по сайту</label>
               <input class="search__input" id="search__input" type="text" name="search" placeholder="Поиск по сайту">
               <button class="search__button" type="submit"><span class="visually-hidden">Найти</span><svg class="search__button-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="0 0 17.6 17.6"><path fill="#D3D2D2" d="M17.3,15.7l-3.4-3.4c1-1.3,1.5-2.9,1.5-4.6C15.4,3.4,12,0,7.7,0S0,3.4,0,7.7s3.4,7.7,7.7,7.7 c1.7,0,3.3-0.6,4.6-1.5l3.4,3.4c0.2,0.2,0.4,0.3,0.8,0.3c0.6,0,1.1-0.5,1.1-1.1C17.6,16.3,17.5,16,17.3,15.7z M2.2,7.7 c0-3,2.5-5.5,5.5-5.5s5.5,2.5,5.5,5.5s-2.5,5.5-5.5,5.5S2.2,10.7,2.2,7.7z"/></svg></button>
             </form>
         </li>
-        <li class="site-list__item site-list__item--last">
-          <a class="site-list__item-inside site-list__item-inside--cart" href="#"><svg class="site-list__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20.3" height="18.8" viewBox="0 0 20.3 18.8"><path fill="#cccccc" d="M19.5,7.2h-3.2L13,0.4c-0.2-0.4-0.6-0.5-1-0.3c-0.4,0.2-0.5,0.6-0.3,1l3.1,6.1H5.6l3.1-6.1c0.2-0.4,0-0.8-0.3-1 s-0.8,0-1,0.3L3.9,7.2H0.8C0.3,7.2,0,7.6,0,8c0,0.4,0.3,0.7,0.8,0.7h0.2l0.9,3c-0.2,0.1-0.3,0.3-0.3,0.6c0,0.4,0.3,0.7,0.7,0.7 l1.7,5.8h12.7l1.7-5.8c0.4,0,0.7-0.3,0.7-0.7c0-0.2-0.1-0.5-0.3-0.6l0.9-3h0.2c0.4,0,0.8-0.3,0.8-0.7C20.3,7.6,20,7.2,19.5,7.2z  M15.4,17.3H4.9l-1.2-4.3h12.9L15.4,17.3z M17,11.6H3.3L2.5,8.7h15.4L17,11.6z"/></svg> Корзина: пока пуста</a>
+        <li class="site-list__item site-list__item--cart">
+          <a class="site-list__item-inside site-list__item-inside--cart" href="#"><svg class="site-list__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="20.3" height="18.8" viewBox="0 0 20.3 18.8"><path fill="#cccccc" d="M19.5,7.2h-3.2L13,0.4c-0.2-0.4-0.6-0.5-1-0.3c-0.4,0.2-0.5,0.6-0.3,1l3.1,6.1H5.6l3.1-6.1c0.2-0.4,0-0.8-0.3-1 s-0.8,0-1,0.3L3.9,7.2H0.8C0.3,7.2,0,7.6,0,8c0,0.4,0.3,0.7,0.8,0.7h0.2l0.9,3c-0.2,0.1-0.3,0.3-0.3,0.6c0,0.4,0.3,0.7,0.7,0.7 l1.7,5.8h12.7l1.7-5.8c0.4,0,0.7-0.3,0.7-0.7c0-0.2-0.1-0.5-0.3-0.6l0.9-3h0.2c0.4,0,0.8-0.3,0.8-0.7C20.3,7.6,20,7.2,19.5,7.2z  M15.4,17.3H4.9l-1.2-4.3h12.9L15.4,17.3z M17,11.6H3.3L2.5,8.7h15.4L17,11.6z"/></svg>Корзина: пока пуста</a>
+        </li>
+        <li class="site-list__item site-list__item--noshow site-list__item--noshow-new">
+          <a class="site-list__item-inside site-list__item-inside--new" href="#">Новые поступления</a>
+        </li>
+        <li class="site-list__item site-list__item--noshow site-list__item--noshow-sell">
+          <a class="site-list__item-inside site-list__item-inside--sell" href="#">Распродажа</a>
+        </li>
+        <li class="site-list__item site-list__item--delivery site-list__item--noshow site-list__item--noshow-delivery">
+          <span class="site-list__item-inside site-list__item-inside--delivery">Бесплатная доставка по России</span>
         </li>
       </ul>
     </nav>
@@ -45,97 +58,123 @@
         <h2 class="order__title">Вязание на заказ</h2>
         <p class="order__welcome">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <form class="order__form knitted-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="order__form knit-form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="knitted-form__fieldset">
-            <legend class="knitted-form__legend">Тип</legend>
-            <ul class="knitted-form__list">
-              <li class="knitted-form__option">
-                <input type="radio" id="interior" class="visually-hidden knitted-form__field knitted-form__field--radio" name="type" value="interior" checked>
-                <label class="knitted-form__label knitted-form__label--radio" for="interior">Аксессуар для интерьера</label>
-              </li>
-              <li class="knitted-form__option">
-                <input type="radio" id="toy" class="visually-hidden knitted-form__field knitted-form__field--radio" name="type" value="toy">
-                <label class="knitted-form__label knitted-form__label--radio" for="toy">Детская игрушка</label>
-              </li>
-            </ul>
+          <fieldset class="knit-form__fieldset knit-form__fieldset--type">
+            <div class="knit-form__fieldset-content">
+              <legend class="knit-form__legend">Тип</legend>
+              <div class="knit-form__filter">
+                <ul class="knit-form__list">
+                  <li class="knit-form__option">
+                    <input type="radio" id="interior" class="visually-hidden knit-form__field knit-form__field--radio" name="type" value="interior" checked>
+                    <label class="knit-form__label knit-form__label--radio" for="interior">Аксессуар для интерьера</label>
+                  </li>
+                  <li class="knit-form__option">
+                    <input type="radio" id="toy" class="visually-hidden knit-form__field knit-form__field--radio" name="type" value="toy">
+                    <label class="knit-form__label knit-form__label--radio" for="toy">Детская игрушка</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="knitted-form__fieldset">
-            <legend class="knitted-form__legend">Цвет</legend>
-            <ul class="knitted-form__list">
-              <li class="knitted-form__option">
-                <input type="checkbox" id="white" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="white" checked>
-                <label class="knitted-form__label knitted-form__label--checkbox" for="white">Белый</label>
-              </li>
-              <li class="knitted-form__option">
-                <input type="checkbox" id="grey" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="grey" checked>
-                <label class="knitted-form__label knitted-form__label--checkbox" for="grey">Серый</label>
-              </li>
-              <li class="knitted-form__option">
-                <input type="checkbox" id="tiffany" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="tiffany">
-                <label class="knitted-form__label knitted-form__label--checkbox" for="tiffany">«Тиффани»</label>
-              </li>
-              <li class="knitted-form__option">
-                <input type="checkbox" id="black" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="black">
-                <label class="knitted-form__label knitted-form__label--checkbox" for="black">Черный</label>
-              </li>
-              <li class="knitted-form__option">
-                <input type="checkbox" id="pink" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="pink">
-                <label class="knitted-form__label knitted-form__label--checkbox" for="pink">Розовый</label>
-              </li>
-              <li class="knitted-form__option">
-                <input type="checkbox" id="orange" class="visually-hidden knitted-form__field knitted-form__field--checkbox" name="orange">
-                <label class="knitted-form__label knitted-form__label--checkbox" for="orange">Оранжевый</label>
-              </li>
-            </ul>
+          <fieldset class="knit-form__fieldset knit-form__fieldset--color">
+            <div class="knit-form__fieldset-content">
+              <legend class="knit-form__legend">Цвет</legend>
+              <div class="knit-form__filter">
+                <ul class="knit-form__list knit-form__list--color">
+                  <li class="knit-form__option">
+                    <input type="checkbox" id="white" class="visually-hidden knit-form__field knit-form__field--checkbox" name="white" checked>
+                    <label class="knit-form__label knit-form__label--checkbox" for="white">Белый</label>
+                  </li>
+                  <li class="knit-form__option">
+                    <input type="checkbox" id="grey" class="visually-hidden knit-form__field knit-form__field--checkbox" name="grey" checked>
+                    <label class="knit-form__label knit-form__label--checkbox" for="grey">Серый</label>
+                  </li>
+                  <li class="knit-form__option">
+                    <input type="checkbox" id="tiffany" class="visually-hidden knit-form__field knit-form__field--checkbox" name="tiffany">
+                    <label class="knit-form__label knit-form__label--checkbox" for="tiffany">«Тиффани»</label>
+                  </li>
+                  <li class="knit-form__option">
+                    <input type="checkbox" id="black" class="visually-hidden knit-form__field knit-form__field--checkbox" name="black">
+                    <label class="knit-form__label knit-form__label--checkbox" for="black">Черный</label>
+                  </li>
+                  <li class="knit-form__option">
+                    <input type="checkbox" id="pink" class="visually-hidden knit-form__field knit-form__field--checkbox" name="pink">
+                    <label class="knit-form__label knit-form__label--checkbox" for="pink">Розовый</label>
+                  </li>
+                  <li class="knit-form__option">
+                    <input type="checkbox" id="orange" class="visually-hidden knit-form__field knit-form__field--checkbox" name="orange">
+                    <label class="knit-form__label knit-form__label--checkbox" for="orange">Оранжевый</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="knitted-form__fieldset">
-            <legend class="knitted-form__legend">ФИО</legend>
-            <p class="knitted-form__group">
-              <label class="knitted-form__label" for="first-name">Имя:</label>
-              <input class="knitted-form__field knitted-form__field--text" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*">
-            </p>
-            <p class="knitted-form__group">
-              <label class="knitted-form__label" for="last-name">Фамилия:</label>
-              <input class="knitted-form__field knitted-form__field--text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*">
-            </p>
-            <p class="knitted-form__group">
-              <label class="knitted-form__label" for="middle-name">Отчество:</label>
-              <input class="knitted-form__field knitted-form__field--text" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
-            </p>
+          <fieldset class="knit-form__fieldset knit-form__fieldset--fio">
+            <div class="knit-form__fieldset-content">
+              <legend class="knit-form__legend">ФИО</legend>
+              <div class="knit-form__filter">
+                <p class="knit-form__group">
+                  <label class="knit-form__label" for="first-name">Имя:</label>
+                  <input class="knit-form__field knit-form__field--text" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+                </p>
+                <p class="knit-form__group">
+                  <label class="knit-form__label" for="last-name">Фамилия:</label>
+                  <input class="knit-form__field knit-form__field--text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+                </p>
+                <p class="knit-form__group">
+                  <label class="knit-form__label" for="middle-name">Отчество:</label>
+                  <input class="knit-form__field knit-form__field--text" id="middle-name" type="text" name="middle-name" placeholder="Отчество, если желаете">
+                </p>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="knitted-form__fieldset">
-            <legend class="knitted-form__legend">Тел</legend>
-            <p class="knitted-form__group">
-              <label for="phone" class="knitted-form__label visually-hidden">Номер телефона:</label>
-              <input class="knitted-form__field knitted-form__field--tel" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*">
-              <svg class="knitted-form__icon knitted-form__icon--tel" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24.8" height="24.3" viewBox="0 0 24.8 24.3"><path fill="#cccccc" d="M17.3,24.3c-0.4,0-0.7,0-1.1,0c-4.9-0.6-8.5-2.9-11.1-5.8C2.5,15.6,0.4,11.9,0,6.8c0-0.5,0-0.9,0-1.4 c0.1-0.9,0.5-1.5,1.1-2.1c0.6-0.7,1.6-1.5,2.5-1.6c0.7,0,1.8,0.5,2.2,1.1c0.4,0.5,0.6,1.6,0.8,2.4C6.8,6.1,7.2,7.2,7.1,8 c-0.2,1.2-1.8,1.7-2.2,2.6c1.6,3.7,4.1,6.5,7.5,8.3c0.8-0.5,1.6-1.9,2.8-1.9c0.4,0,1,0.2,1.4,0.3c0.5,0.1,0.9,0.3,1.3,0.5 c0.7,0.3,2,0.6,2.4,1.2c0.4,0.6,0.7,1.6,0.6,2.2C20.6,22.5,18.5,23.9,17.3,24.3z M12.5,1.5c5.9,0,10.8,4.8,10.8,10.8h1.5 C24.8,5.5,19.3,0,12.5,0V1.5z M12.5,9.3v1.6c0.8,0,1.4,0.6,1.4,1.4h1.6C15.5,10.7,14.2,9.3,12.5,9.3z M12.5,6.2 c3.3,0,6.1,2.7,6.1,6.1h1.6c0-4.2-3.4-7.6-7.6-7.6V6.2z"/></svg>
-            </p>
+          <fieldset class="knit-form__fieldset knit-form__fieldset--tel">
+            <div class="knit-form__fieldset-content">
+              <legend class="knit-form__legend">Тел</legend>
+              <div class="knit-form__filter">
+                <p class="knit-form__group">
+                  <label for="phone" class="knit-form__label visually-hidden">Номер телефона:</label>
+                  <input class="knit-form__field knit-form__field--tel" id="phone" type="tel" name="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
+                  <svg class="knit-form__icon knit-form__icon--tel" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24.8" height="24.3" viewBox="0 0 24.8 24.3"><path fill="#cccccc" d="M17.3,24.3c-0.4,0-0.7,0-1.1,0c-4.9-0.6-8.5-2.9-11.1-5.8C2.5,15.6,0.4,11.9,0,6.8c0-0.5,0-0.9,0-1.4 c0.1-0.9,0.5-1.5,1.1-2.1c0.6-0.7,1.6-1.5,2.5-1.6c0.7,0,1.8,0.5,2.2,1.1c0.4,0.5,0.6,1.6,0.8,2.4C6.8,6.1,7.2,7.2,7.1,8 c-0.2,1.2-1.8,1.7-2.2,2.6c1.6,3.7,4.1,6.5,7.5,8.3c0.8-0.5,1.6-1.9,2.8-1.9c0.4,0,1,0.2,1.4,0.3c0.5,0.1,0.9,0.3,1.3,0.5 c0.7,0.3,2,0.6,2.4,1.2c0.4,0.6,0.7,1.6,0.6,2.2C20.6,22.5,18.5,23.9,17.3,24.3z M12.5,1.5c5.9,0,10.8,4.8,10.8,10.8h1.5 C24.8,5.5,19.3,0,12.5,0V1.5z M12.5,9.3v1.6c0.8,0,1.4,0.6,1.4,1.4h1.6C15.5,10.7,14.2,9.3,12.5,9.3z M12.5,6.2 c3.3,0,6.1,2.7,6.1,6.1h1.6c0-4.2-3.4-7.6-7.6-7.6V6.2z"/></svg>
+                </p>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="knitted-form__fieldset">
-            <legend class="knitted-form__legend">E-mail</legend>
-            <p class="knitted-form__group">
-              <label for="email" class="knitted-form__label visually-hidden">E-mail:</label>
-              <input class="knitted-form__field knitted-form__field--email" id="email" type="email" name="email" placeholder="Ваш Email*">
-              <svg class="knitted-form__icon knitted-form__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="21" viewBox="0 0 32 21"><path fill="#cccccc" d="M28,0H4C1.8,0,0,1.8,0,4v13c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V4C32,1.8,30.2,0,28,0z M2,5.3l7,5.3 l-7,5.3V5.3z M30,17c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2l7.8-5.9l4.4,3.3c0.5,0.4,1.2,0.6,1.8,0.6c0.6,0,1.3-0.2,1.8-0.6l4.4-3.3 L30,17L30,17z M30,15.8l-7-5.3l7-5.3V15.8z M17.2,13.6C16.8,13.9,16.4,14,16,14s-0.9-0.1-1.2-0.4l-4.1-3.1L9.8,9.9L2,4v0 c0-1.1,0.9-2,2-2h24c1.1,0,2,0.9,2,2L17.2,13.6z"/></svg>
-            </p>
+          <fieldset class="knit-form__fieldset knit-form__fieldset--email">
+            <div class="knit-form__fieldset-content">
+              <legend class="knit-form__legend">E-mail</legend>
+              <div class="knit-form__filter">
+                <p class="knit-form__group">
+                  <label for="email" class="knit-form__label visually-hidden">E-mail:</label>
+                  <input class="knit-form__field knit-form__field--email" id="email" type="email" name="email" placeholder="Ваш Email*" required>
+                  <svg class="knit-form__icon knit-form__icon--email" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="21" viewBox="0 0 32 21"><path fill="#cccccc" d="M28,0H4C1.8,0,0,1.8,0,4v13c0,2.2,1.8,4,4,4h24c2.2,0,4-1.8,4-4V4C32,1.8,30.2,0,28,0z M2,5.3l7,5.3 l-7,5.3V5.3z M30,17c0,1.1-0.9,2-2,2H4c-1.1,0-2-0.9-2-2l7.8-5.9l4.4,3.3c0.5,0.4,1.2,0.6,1.8,0.6c0.6,0,1.3-0.2,1.8-0.6l4.4-3.3 L30,17L30,17z M30,15.8l-7-5.3l7-5.3V15.8z M17.2,13.6C16.8,13.9,16.4,14,16,14s-0.9-0.1-1.2-0.4l-4.1-3.1L9.8,9.9L2,4v0 c0-1.1,0.9-2,2-2h24c1.1,0,2,0.9,2,2L17.2,13.6z"/></svg>
+                </p>
+              </div>
+            </div>
           </fieldset>
 
-          <fieldset class="knitted-form__fieldset knitted-form__fieldset--last">
-            <legend class="knitted-form__legend">Доп</legend>
-            <p class="knitted-form__group">
-              <label for="msg" class="knitted-form__label visually-hidden">Дополнительное сообщение:</label>
-              <textarea class="knitted-form__field knitted-form__field--textarea" id="msg" name="msg" rows="6" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </p>
+          <fieldset class="knit-form__fieldset knit-form__fieldset--dop knit-form__fieldset--last">
+            <div class="knit-form__fieldset-content">
+              <legend class="knit-form__legend">Доп</legend>
+              <div class="knit-form__filter">
+                <p class="knit-form__group">
+                  <label for="msg" class="knit-form__label visually-hidden">Дополнительное сообщение:</label>
+                  <textarea class="knit-form__field knit-form__field--textarea" id="msg" name="msg" rows="6" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                </p>
+              </div>
+            </div>
           </fieldset>
 
-          <p class="knitted-form__footnote">*Поля обязательны для заполнения</p>
+          <div class="knit-form__footer">
+            <p class="knit-form__footnote">*Поля обязательны для заполнения</p>
+            <button class="knit-form__button button" type="submit">Отправить заказ</button>
+          </div>
 
-          <button class="knitted-form__button button" type="submit">Отправить заказ</button>
         </form>
 
       </div>
@@ -145,6 +184,11 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link logo" href="index.html">
+          <span class="logo__image logo__image--footer" aria-label="Логотип магазина «Мишка»"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="101.6" height="34.1" viewBox="0 0 101.6 34.1"><path fill="#231f20" d="M19.1,28.8c0.3,1.4,0.8,3.1-0.4,4.2c-0.7,0.6-1.9,0.9-2.8,0.7c-0.8-0.2-1-0.9-0.4-1.4c0.1-0.1-0.2-1.5-0.3-1.9 c-0.2-0.8-0.2-1.6-0.2-2.5c0-2.6,0.2-5.1,0-7.6c0-0.6-0.1-1.2-0.2-1.9c-0.5,1.4-1,2.7-1.3,4.1c-0.3,1.3-0.5,2.7-1,3.9 c0,0.1,0.1,0.2,0.1,0.3c0.2,0.5-0.4,0.9-0.7,1.2c-0.3,0.2-0.5,0.3-0.8,0.4c-0.7,0.3-1.9,0.6-2.5,0c-0.2-0.1-0.3-0.2-0.3-0.4 c-0.1-0.2,0-0.5,0.2-0.7c-0.5-1.6-0.9-3.2-1.8-4.7c-0.9-1.5-1.5-3-2.2-4.7c-0.1-0.1-0.1-0.3-0.2-0.4c0,0.4,0,0.8,0,1.2 C4.7,23,5,27.1,5,31.2c0,1.4-2.6,2-3.5,1.3c-0.2-0.2-0.4-0.3-0.6-0.5c-0.4-0.5-0.3-1,0.1-1.4c-0.1-4-0.4-7.9-0.4-11.9 c0-2.1-0.1-4.1-0.4-6.1C-0.1,10.7-0.2,9,0.6,7.3c0.7-1.4,4.1-1.6,3.9,0c1.7,3.3,2.9,6.8,4.3,10.2c0.5,1.2,1.1,2.3,1.6,3.4 c0.4-1.2,0.9-2.3,1.3-3.5c1.1-3.1,2-6.2,2.6-9.4c0-0.1-0.1-0.2-0.1-0.3c-0.1-0.3,0-0.7,0.4-1c0.5-1,4-1.5,3.8-0.5 c0,0.2-0.1,0.5-0.1,0.7c0.7,2.1,0.4,4.3,0.4,6.5c0,2.7,0.4,5.4,0.5,8C19.2,23.9,18.7,26.5,19.1,28.8z M27.5,22.2 c-0.1-2-0.8-3.9-0.8-5.9c0-2.3,0.2-4.6-0.2-6.9c-0.1-0.7-4.1,0.1-3.9,1c0.3,2.1,0.2,4.2,0.2,6.4c0,2,0.5,3.9,0.7,5.9 c0.3,2.1-0.1,4.2,0.1,6.2c0.1,1,0.8,2.7,0.1,3.6c-0.4,0.5,1.5,0.3,1.6,0.3c0.8-0.1,1.8-0.4,2.3-1c0.7-0.8,0.2-2.4,0.1-3.4 C27.4,26.4,27.6,24.2,27.5,22.2z M43.8,18.9c-2.1-2.8-5.9-0.8-8.6-1.5c-1.4-0.4-1.4-2.3-1.4-3.4c0-1.4-0.1-2.7-0.3-4.1 c-0.1-1.1,0-2.1,0.7-2.9c0.1-0.1,0.9-0.3,0.8-0.3c0.4-0.1,0.7-0.1,1.1-0.1c1.5-0.1,4.6,0.2,4,2.5c-0.3,1,3.6,0.4,3.9-0.6 c1.2-4.6-7.3-3.7-9.7-3.1c-2.2,0.6-4.6,1.8-4.8,4.4c-0.1,1.2,0.3,2.4,0.3,3.6c0.1,1.4-0.2,2.8,0.3,4.1c1.1,3,5.5,1.6,7.8,1.7 c3.8,0.3,2.7,5.5,2.7,7.9c0,1.3,1.2,3.4,0.2,4.5c-0.6,0.7-2,0.7-2.8,0.8c-0.8,0.1-2.2,0.3-2.7-0.5c-1-1.4,0.1-3.8-0.1-5.4 c-0.1-0.9-4.1-0.1-3.9,1c0.3,2.6-1.4,6.1,2.4,6.6c2.4,0.3,5.2-0.2,7.5-0.9c1.2-0.4,2.3-0.9,3.2-1.8c1-0.9,0.7-2.3,0.4-3.5 C44.3,24.8,45.7,21.4,43.8,18.9z M61.2,18.7c-0.1-3.8-0.7-7.5-0.7-11.3c0-2-4-1.3-4,0.3c0,3.6,0.5,7.2,0.7,10.8c0,0.1,0,0.1,0,0.2 c-1.9,0-3.9,0.2-5.9,0.2c0.2-4.6-0.6-9.2-0.4-13.9c0-0.6-3.9-0.1-3.9,1c-0.2,4.5,0.6,8.9,0.5,13.4c-0.1,2.1-0.2,4.3-0.3,6.4 c0,1.1,0.2,2.2,0.3,3.3c0.1,1,0.5,2.3,0.2,3.3c-0.2,0.8,3.6,0.3,3.9-0.7c0.5-1.8-0.2-4-0.4-5.8c-0.2-1.7,0-3.5,0.1-5.2 c2-0.1,4.1-0.3,6.1,0c0.1,1.4,0.2,2.8,0.3,4.1c0.1,1.2,0.2,2.3,0.2,3.5c0,1,0.1,2.5-0.2,3.5c-0.8,2.1,3.1,1.9,3.7,0.4 c0.7-1.9,0.5-4.2,0.4-6.2C61.6,23.5,61.2,21.1,61.2,18.7z M78.1,23.1c-0.9-2.8-2.4-5.2-3.6-7.8c1-1.9,2-3.9,2.9-5.9 c0.8-1.8,1.4-3.8,3.1-5.1c0.6-0.4,0.6-0.9-0.3-1c-0.9-0.1-2.1,0.2-2.8,0.7C76,5.3,75,6.7,74.3,8.4c-0.9,2.1-1.9,4.1-2.9,6.1 c-0.1,0.1-0.1,0.3-0.2,0.4c-0.5,0.3-0.8,0.8-0.6,1.3c-0.8,1.6-1.6,3.1-2.5,4.6c-0.3-5.5-1-11.1-1.2-16.6c0-1.3-4-0.5-3.9,1 c0.2,6.9,1.2,13.7,1.3,20.6c0,0,0,0,0,0.1c-0.3,0.3-0.2,0.5,0.1,0.6c0,1.8-0.1,3.5-0.2,5.3c-0.5,0.7,0.5,1.1,1.1,1.1 c0,0,0.1,0,0.1,0c0.7,0,2.6-0.3,2.7-1.4c0.2-2.1,0.3-4.2,0.2-6.3c1.6-1.7,2.9-3.6,4.1-5.6c0.8,1.5,1.5,3,2,4.6 c0.9,2.7,2.3,5.3,3.1,8c0.5,1.8,4.5,0.7,3.9-1C80.4,28.4,79,25.9,78.1,23.1z M99.4,20.2c0,1.9,0.1,3.8,0.1,5.7 c0.1,1.3,0.5,4-0.4,5.1c-0.5,0.6-1.5,0.9-2.3,1c-0.1,0-2,0.2-1.6-0.3c0.8-1,0.4-3.3,0.4-4.5c-0.1-2.3-0.2-4.6-0.2-6.9 c-1.1,0.1-2.1,0.4-3.2,0.3c-1.4-0.1-3.7-0.7-5.1-0.1c0.1,0.8,0.1,1.6,0.1,2.4c0,2.8,0,5.6,0,8.3c0,1.1-3.9,1.6-3.9,1 c0-3.5,0.1-7-0.1-10.5c-0.1-3-0.9-6.2-0.4-9.2c0.5-2.7,2-4.7,4.6-5.7c2.3-0.9,5.1-1.3,7.5-1.4c2.4-0.1,3.8,0.8,4,3.2 c0.2,2.7,0.3,5.4,0.4,8c0,0.3,0,0.7,0,1c0.9-0.1,2.1-0.1,2.3,0.8C101.8,19.4,100.5,20.1,99.4,20.2z M93.7,18.3c0.6,0,1.1,0,1.7-0.1 c-0.1-2-0.3-4-0.3-6c0-1.2,0.3-4.1-0.9-4.9c-0.9-0.6-1.9-0.4-2.8-0.2c-0.7,0.1-1.8,0.1-2.4,0.4c-2.2,1.4-2.4,4.7-2.3,7 c0.1,1.3,0.2,2.5,0.3,3.7C89.1,17.9,91.4,18.3,93.7,18.3z M24.1,6.7c0.5-0.1,1-0.2,1.5-0.5C25.7,6.1,25.8,6,25.8,6 c0.5-0.3,1-0.8,0.7-1.4c-0.5-1.1-0.4-2.2-0.4-3.4c0-1-1-1.2-1.8-1.2c-0.7,0.1-2.2,0.6-2.2,1.5c0,1-0.1,2,0.1,3 c0,0.1-0.1,0.2-0.1,0.4c-0.1,0.2,0,0.4,0.1,0.6c0,0,0,0.1,0,0.1c0,0.1,0,0.2,0,0.3c0.1,0.2,0.2,0.4,0.4,0.5 C23.2,6.7,23.7,6.7,24.1,6.7z"/></svg></span>
+        </a>
+      </div>
       <div class="page-footer__social social">
         <ul class="social__list" aria-label="Мы в социальных сетях">
           <li class="social__item">
@@ -165,5 +209,6 @@
   </footer>
 
   <script async src="js/script.js"></script>
+  <script async src="js/picturefill.min.js"></script>
 </body>
 </html>

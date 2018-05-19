@@ -19,6 +19,18 @@
   padding: 34px 30px 34px;
 }
 
+@media (min-width: 568px) {
+  .modal {
+    left: 50%;
+    max-width: 568px;
+    margin-left: -(568px / 2);
+  }
+
+  .modal--add-to-cart {
+    border: 1px solid @grey-ish;
+  }
+}
+
 .modal__title {
   font-size: @h2-size;
   color: @headings-color;

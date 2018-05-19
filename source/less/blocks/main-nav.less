@@ -71,3 +71,24 @@
     display: none;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    padding-left: @page-bleed-tablet;
+    padding-right: @page-bleed-tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    max-width: 1150px;
+    padding-left: @page-bleed-desktop;
+    padding-right: @page-bleed-desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
