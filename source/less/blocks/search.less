@@ -58,14 +58,14 @@
 }
 
 .search__button {
+  position: absolute;
+  top: 29px;
+  left: 0;
   background: none;
   border: 0;
   padding: 0;
   margin: 0;
   cursor: pointer;
-  position: absolute;
-  top: 29px;
-  left: 0;
 }
 
 .search__button,
@@ -82,4 +82,11 @@
 .search__button:active path {
   fill: @medium-aquamarine;
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .search__button {
+    position: static;
+    display: block;
+  }
 }

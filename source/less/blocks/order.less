@@ -1,8 +1,5 @@
 .order {
   margin-bottom: 55px;
-}
-
-.order__wrapper {
   padding-left: @page-bleed;
   padding-right: @page-bleed;
 }
@@ -26,4 +23,71 @@
   line-height: @line-height-small;
   margin: 0;
   margin-bottom: 27px;
+}
+
+@media (min-width: @tablet-width) {
+  .order {
+    border-top: 1px solid @grey-light;
+    padding-left: @page-bleed-tablet;
+    padding-right: @page-bleed-tablet;
+    margin-bottom: 54px;
+    margin-top: -59px;
+  }
+
+  .order__title {
+    position: relative;
+    font-size: @h1-size-tablet;
+    line-height: @h1-line-height-tablet;
+    color: @black;
+    padding-top: 95px;
+    padding-bottom: 80px;
+    margin-left: -(@page-bleed-tablet);
+    margin-right: -(@page-bleed-tablet);
+    margin-bottom: 80px;
+  }
+
+  .order__title::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 24px;
+    background: transparent url("../img/zigzag-fill.svg") center top repeat;
+    background-size: cover;
+  }
+
+  .order__welcome {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: @font-size-big;
+    line-height: @base-line-height;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1020px) {
+  .order__title::after {
+    bottom: -10px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order__title {
+    font-size: @h2-size-desktop;
+    line-height: @h2-line-height-desktop;
+    padding-top: 94px;
+    padding-bottom: 101px;
+    margin-left: -(@page-bleed-desktop);
+    margin-right: -(@page-bleed-desktop);
+    margin-bottom: 110px;
+  }
+}
+
+@media (min-width: 1180px) {
+  .order__title::after {
+    background-repeat: repeat-x;
+    background-size: auto;
+  }
 }
