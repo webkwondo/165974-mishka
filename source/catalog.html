@@ -106,7 +106,7 @@
                 </picture>
             </a>
             <div class="product__info">
-              <h3 class="product__title"><a class="product__title-link" href="#">Большая корзинка для игрушек</a></h3>
+              <h3 class="product__title"><a class="product__title-link" href="#">Большая корзинка для&nbsp;игрушек</a></h3>
               <p class="product__properties">
                 <span class="product__property">Диаметр</span> <span class="product__value">30 см</span>,
                 <span class="product__property">высота</span> <span class="product__value">30 см</span>
@@ -167,29 +167,33 @@
     </div>
   </footer>
 
-  <section class="modal modal--add-to-cart">
-    <h2 class="modal__title">Добавить<br> в корзину</h2>
-    <form class="modal__form add-to-cart-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="add-to-cart-form__fieldset">
-        <legend class="add-to-cart-form__legend">Выберите размер:</legend>
-        <ul class="add-to-cart-form__list">
-          <li class="add-to-cart-form__option">
-            <input type="radio" id="s" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="s" checked>
-            <label class="add-to-cart-form__label" for="s">S</label>
-          </li>
-          <li class="add-to-cart-form__option">
-            <input type="radio" id="m" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="m">
-            <label class="add-to-cart-form__label" for="m">M</label>
-          </li>
-          <li class="add-to-cart-form__option add-to-cart-form__option--last">
-            <input type="radio" id="l" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="l">
-            <label class="add-to-cart-form__label" for="l">L</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button type="submit" class="add-to-cart-form__button button">Добавить</button>
-    </form>
-    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <section class="modal">
+    <div class="modal__overlay">
+      <div class="modal__box modal__box--add-to-cart">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <form class="modal__form add-to-cart-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="add-to-cart-form__fieldset">
+            <legend class="add-to-cart-form__legend">Выберите размер:</legend>
+            <ul class="add-to-cart-form__list">
+              <li class="add-to-cart-form__option">
+                <input type="radio" id="s" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="s" checked>
+                <label class="add-to-cart-form__label" for="s">S</label>
+              </li>
+              <li class="add-to-cart-form__option">
+                <input type="radio" id="m" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="m">
+                <label class="add-to-cart-form__label" for="m">M</label>
+              </li>
+              <li class="add-to-cart-form__option add-to-cart-form__option--last">
+                <input type="radio" id="l" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="l">
+                <label class="add-to-cart-form__label" for="l">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="add-to-cart-form__button button">Добавить</button>
+        </form>
+        <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </div>
   </section>
 
   <script async src="js/script.js"></script>

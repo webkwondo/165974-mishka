@@ -20,13 +20,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .featured-product__description {
   line-height: @line-height-small;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 17px;
 }
 
 .featured-product__properties {
@@ -41,16 +41,18 @@
   border-bottom: 1px solid @grey-light;
   padding-top: 10px;
   padding-bottom: 9px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .featured-product__property {
-  width: 38.46%;
+  width: 37.46%;
 }
 
 .featured-product__image-holder {
   padding: 0;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .featured-product__image {
@@ -65,7 +67,7 @@
   line-height: @line-height-small;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 26px;
 }
 
 .featured-product__button {
@@ -83,7 +85,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 53px;
   }
 
   .featured-product__title {
@@ -115,21 +117,36 @@
     width: 100%;
   }
 
+  .featured-product__info,
+  .featured-product__bottom {
+    width: 50%;
+    padding-right: 44px;
+  }
+
   .featured-product__info {
     display: flex;
     flex-direction: column;
-    width: 50%;
     min-height: 404px;
-    padding-right: 44px;
   }
 
   .featured-product__description {
     line-height: 30px;
-    margin-bottom: 30px;
+    margin-top: -8px;
+    margin-bottom: 35px;
   }
 
   .featured-product__properties {
     font-size: @base-font-size;
+    margin-bottom: 125px;
+  }
+
+  .featured-product__property {
+    width: 99px;
+  }
+
+  .featured-product__bottom {
+    position: absolute;
+    bottom: 0;
   }
 
   .featured-product__image-holder {
@@ -143,7 +160,7 @@
 
   .featured-product__price {
     font-size: 20px;
-    margin-top: auto;
+    margin-bottom: 34px;
   }
 }
 
@@ -151,7 +168,7 @@
   .featured-product {
     padding-left: @page-bleed-desktop;
     padding-right: @page-bleed-desktop;
-    padding-top: 55px;
+    padding-top: 52px;
     margin-bottom: 73px;
   }
 
@@ -164,6 +181,12 @@
     order: -1;
     min-width: 175px;
     margin-right: 0;
+    text-align: left;
+  }
+
+  .featured-product__flag-text {
+    text-align: center;
+    margin-left: 19px;
   }
 
   .featured-product__wrapper {
@@ -179,6 +202,18 @@
   .featured-product__info {
     width: 40%;
     min-height: 470px;
+  }
+
+  .featured-product__description {
+    margin-bottom: 47px;
+  }
+
+  .featured-product__bottom {
+    width: 33.4%;
+  }
+
+  .featured-product__info,
+  .featured-product__bottom {
     padding-right: 58px;
   }
 

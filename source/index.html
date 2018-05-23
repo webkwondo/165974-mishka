@@ -55,7 +55,7 @@
 
     <section class="hero">
       <div class="hero__wrapper">
-        <h2 class="hero__title">Милые штуки ручной работы для дома</h2>
+        <h2 class="hero__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h2>
         <ul class="hero__categories">
           <li class="hero__category">
             <a class="hero__category-link hero__category-link--interior" href="#">
@@ -101,8 +101,10 @@
                 <img class="featured-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото вязаных корзинок">
               </picture>
             </p>
-            <p class="featured-product__price">Цена: 990 руб.</p>
-            <a href="#" class="featured-product__button button">Заказать</a>
+            <div class="featured-product__bottom">
+              <p class="featured-product__price">Цена: 990 руб.</p>
+              <a href="#" class="featured-product__button button">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
@@ -140,7 +142,7 @@
         <div class="testimonials__slider slider">
           <ul class="testimonials__list slider__list">
             <li class="testimonials__item testimonials__item--one slider__item">
-              <p class="testimonials__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <p class="testimonials__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="testimonials__author">
                 <span class="testimonials__author-name">Анастасия Красильникова</span><br>
                 <span class="testimonials__author-contact">@misssssiskras</span>
@@ -178,7 +180,6 @@
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <img class="contacts__map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Магазин «Мишка» по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
             </picture>
-            <!-- <img class="contacts__map-image" src="img/map.jpg" width="320" height="457" alt="Магазин «Мишка» по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"> -->
           </a>
           <span class="contacts__map-pin"><img class="contacts__map-pin-image" src="img/map-pin.png" width="67" height="100" alt="Указатель на карте"></span>
         </p>
@@ -214,29 +215,33 @@
     </div>
   </footer>
 
-  <section class="modal modal--add-to-cart">
-    <h2 class="modal__title">Добавить<br> в корзину</h2>
-    <form class="modal__form add-to-cart-form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="add-to-cart-form__fieldset">
-        <legend class="add-to-cart-form__legend">Выберите размер:</legend>
-        <ul class="add-to-cart-form__list">
-          <li class="add-to-cart-form__option">
-            <input type="radio" id="s" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="s" checked>
-            <label class="add-to-cart-form__label" for="s">S</label>
-          </li>
-          <li class="add-to-cart-form__option">
-            <input type="radio" id="m" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="m">
-            <label class="add-to-cart-form__label" for="m">M</label>
-          </li>
-          <li class="add-to-cart-form__option add-to-cart-form__option--last">
-            <input type="radio" id="l" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="l">
-            <label class="add-to-cart-form__label" for="l">L</label>
-          </li>
-        </ul>
-      </fieldset>
-      <button type="submit" class="add-to-cart-form__button button">Добавить</button>
-    </form>
-    <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  <section class="modal">
+    <div class="modal__overlay">
+      <div class="modal__box modal__box--add-to-cart">
+        <h2 class="modal__title">Добавить<br> в корзину</h2>
+        <form class="modal__form add-to-cart-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="add-to-cart-form__fieldset">
+            <legend class="add-to-cart-form__legend">Выберите размер:</legend>
+            <ul class="add-to-cart-form__list">
+              <li class="add-to-cart-form__option">
+                <input type="radio" id="s" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="s" checked>
+                <label class="add-to-cart-form__label" for="s">S</label>
+              </li>
+              <li class="add-to-cart-form__option">
+                <input type="radio" id="m" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="m">
+                <label class="add-to-cart-form__label" for="m">M</label>
+              </li>
+              <li class="add-to-cart-form__option add-to-cart-form__option--last">
+                <input type="radio" id="l" class="visually-hidden add-to-cart-form__field add-to-cart-form__field--radio" name="size" value="l">
+                <label class="add-to-cart-form__label" for="l">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="add-to-cart-form__button button">Добавить</button>
+        </form>
+        <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </div>
   </section>
 
   <script async src="js/script.js"></script>

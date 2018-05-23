@@ -24,11 +24,13 @@
 .site-list__item-inside {
   display: block;
   color: @black;
-  padding: 27px 44px;
+  padding: 27px 25px 27px 44px;
 
   &--logo {
     padding-top: 21px;
+    padding-right: 44px;
     padding-bottom: 22px;
+    padding-left: 44px;
   }
 
   &--cart {
@@ -146,7 +148,7 @@
       position: relative;
       top: auto;
       left: auto;
-      right: 29px;
+      right: 31px;
       padding: 0;
     }
   }
@@ -247,6 +249,15 @@
 
   .site-list__item-inside--order {
     padding-left: 35px;
+  }
+
+  .site-list__item-inside--cart {
+    padding-left: 64px;
+
+    & .site-list__icon {
+      top: 3px;
+      right: 33px;
+    }
   }
 
   .site-list__item-inside--new,
