@@ -21,13 +21,13 @@ navToggle.addEventListener('click', function() {
 
 if ( document.querySelector(".modal") ) {
 
-  var popup = document.querySelector(".modal");
-  var close = popup.querySelector(".modal__close");
+  var modal = document.querySelector(".modal");
+  var close = modal.querySelector(".modal__close");
 
   if (close) {
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
-      popup.classList.remove("modal--show");
+      modal.classList.remove("modal--show");
     });
   }
 
@@ -36,21 +36,25 @@ if ( document.querySelector(".modal") ) {
   if (link) {
     link.addEventListener("click", function (evt) {
       evt.preventDefault();
-      popup.classList.add("modal--show");
+      modal.classList.add("modal--show");
     });
   }
 
   var link2 = document.querySelectorAll(".product__add-to-cart");
 
   if (link2) {
-
     for (var i = 0; i < link2.length; i++) {
         link2[i].addEventListener("click", function (evt) {
         evt.preventDefault();
-        popup.classList.add("modal--show");
+        modal.classList.add("modal--show");
       });
     }
-
   }
+
+  // window.onclick = function(event) {
+  //   if (event.target == modal) {
+  //     modal.classList.remove("modal--show");
+  //   }
+  // }
 
 }
