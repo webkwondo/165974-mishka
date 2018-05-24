@@ -1,17 +1,15 @@
 .copyright__link {
   display: inline-block;
+  fill: #63d1bb;
 }
 
-.copyright__link:hover path,
-.copyright__link:focus path {
-  fill: @puerto-rico;
-}
-
-.copyright__link:active path {
-  fill: @puerto-rico;
+.copyright__link:hover,
+.copyright__link:focus {
+  fill: @link-color-hover;
 }
 
 .copyright__link:active {
+  fill: @link-color-hover;
   opacity: 0.3;
 }
 
@@ -26,10 +24,6 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0 15px;
-}
-
-.copyright__icon svg {
-  display: block;
 }
 
 @media (min-width: @tablet-width) {
