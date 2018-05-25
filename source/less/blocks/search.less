@@ -52,8 +52,12 @@
   border-bottom: 2px solid @medium-aquamarine;
 }
 
-.search__input:hover + .search__button path,
-.search__input:focus + .search__button path {
+.search__button-icon {
+  fill: #d3d2d2;
+}
+
+.search__input:hover + .search__button .search__button-icon,
+.search__input:focus + .search__button .search__button-icon {
   fill: @medium-aquamarine;
 }
 
@@ -74,12 +78,12 @@
   height: 18px;
 }
 
-.search__button:hover path,
-.search__button:focus path {
+.search__button-icon:hover,
+.search__button-icon:focus {
   fill: @medium-aquamarine;
 }
 
-.search__button:active path {
+.search__button-icon:active {
   fill: @medium-aquamarine;
   opacity: 0.3;
 }
