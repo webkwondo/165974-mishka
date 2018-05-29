@@ -65,7 +65,6 @@
 }
 
 .contacts__map {
-  position: relative;
   min-height: 200px;
   margin: 0;
   margin-left: -(@page-bleed);
@@ -73,7 +72,21 @@
   margin-bottom: 42px;
 }
 
+.contacts__map-embed {
+  display: block;
+  height: 457px;
+}
+
+.contacts__map-embed--nojs {
+  display: none;
+}
+
 .contacts__map-link {
+  position: relative;
+  display: none;
+}
+
+.contacts__map-link--nojs {
   display: block;
 }
 
@@ -136,12 +149,14 @@
 
   .contacts__detail-label {
     flex-basis: auto;
+    max-width: 100%;
     margin-right: 26px;
   }
 
   .contacts__detail-value {
     flex-grow: 1;
     flex-basis: auto;
+    max-width: 100%;
   }
 
   .contacts__map {

@@ -171,6 +171,8 @@
 
 .knit-form__field--textarea {
   border: 2px solid @grey;
+  min-height: 142px;
+  resize: vertical;
   padding: 15px;
   margin-bottom: 10px;
 }
@@ -192,9 +194,12 @@
 }
 
 .knit-form__field:hover,
+.knit-form__field:focus,
 .knit-form__field:active,
 .knit-form__label--checkbox:hover::before,
-.knit-form__label--radio:hover::before {
+.knit-form__label--radio:hover::before,
+.knit-form__field--checkbox:focus + .knit-form__label--checkbox::before,
+.knit-form__field--radio:focus + .knit-form__label--radio::before {
   border-color: @medium-aquamarine-lighter;
 }
 
@@ -203,7 +208,8 @@
   border-color: rgba(68, 68, 68, 0.3);
 }
 
-.knit-form__group:hover svg {
+.knit-form__group:hover svg,
+.knit-form__field:focus + .knit-form__icon {
   fill: @medium-aquamarine-lighter;
 }
 
@@ -301,6 +307,11 @@
 
   .knit-form__legend::after {
     display: none;
+  }
+
+  .knit-form__fieldset--dop .knit-form__legend {
+    align-self: flex-start;
+    margin-top: 17px;
   }
 
   .knit-form__filter {
